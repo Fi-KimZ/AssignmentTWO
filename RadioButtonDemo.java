@@ -10,11 +10,11 @@ public class RadioButtonDemo extends JFrame implements ActionListener {
 
       public RadioButtonDemo() {
         setTitle("RadioButtonDemo");
-        setSize(400, 300);
+        setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
 
-        // Radio button
+        
         birdBtn = new JRadioButton("Bird");
         catBtn = new JRadioButton("Cat");
         dogBtn = new JRadioButton("Dog");
@@ -28,19 +28,19 @@ public class RadioButtonDemo extends JFrame implements ActionListener {
         group.add(rabbitBtn);
         group.add(pigBtn);
 
-        // Add radio buttons to frame
+        
         add(birdBtn);
         add(catBtn);
         add(dogBtn);
         add(rabbitBtn);
         add(pigBtn);
 
-        // Show Selection Button
+        
         showBtn = new JButton("Show Selection");
         showBtn.addActionListener(this);
         add(showBtn);
 
-        // Label for image (optional)
+          
         imageLabel = new JLabel();
         add(imageLabel);
 
